@@ -323,3 +323,8 @@ L4-балансировщики выполняют health check серверов
 1. <a id="source1"></a>[Twitch Ads — Reach the Twitch audience](https://twitchadvertising.tv/)
 2. <a id="source2"></a>[Amazon Ads — Curious about Twitch ads? Here’s everything you need to know](https://advertising.amazon.com/library/guides/twitch-ads)
 3. <a id="source3"></a>[Twitch — Twitch State of Engineering 2023](https://blog.twitch.tv/en/2023/09/28/twitch-state-of-engineering-2023/)
+4. <a id="source4"></a>[Twitch Engineering — Ingesting Live Video Streams at Global Scale](https://blog.twitch.tv/en/2022/04/26/ingesting-live-video-streams-at-global-scale/)
+5. <a id="source5"></a>[Amazon Route 53 — Latency-based routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
+6. <a id="source6"></a>[RFC 4786 — Operation of Anycast Services](https://www.rfc-editor.org/rfc/rfc4786.html)
+7. <a id="source7"></a>[NGINX — Testing the Performance of NGINX Ingress Controller for Kubernetes](https://blog.nginx.org/blog/testing-performance-nginx-ingress-controller-kubernetes)
+8. <a id="source8"></a>[NGINX — Testing the Performance of NGINX and NGINX Plus Web Servers](https://blog.nginx.org/blog/testing-the-performance-of-nginx-and-nginx-plus-web-servers)
