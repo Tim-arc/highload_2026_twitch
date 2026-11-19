@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="675" viewBox="0 0 1260 675">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#171717"/></marker></defs>
+<rect width="1260" height="675" fill="white"/>
+<rect x="560" y="250" width="665" height="398" rx="12" fill="#f6f6f6" stroke="#aaa"/>
+<text x="579" y="279" font-family="Arial, sans-serif" font-size="19" text-anchor="start" fill="#171717" font-weight="bold">Управляющий контур</text>
+<polyline points="270,80 565,80" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="413" y="62" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">DNS: IP региональных шлюзов</text>
+<polyline points="565,98 270,98" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="270,108 455,108 455,165 565,165" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="501" y="150" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">HTTPS</text>
+<polyline points="565,197 330,197 330,100 270,100" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="390" y="237" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">Ответ API: основной + резервные endpoints</text>
+<polyline points="820,215 820,305" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="895,180 1055,180 1055,305" fill="none" stroke="#171717" stroke-width="1.9" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="1065" y="165" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">После переключения</text>
+<polyline points="94,115 94,310" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="82" y="263" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">WSS</text>
+<polyline points="195,115 195,259 285,259 285,525 270,525" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="328" y="472" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">RTMPS</text>
+<polyline points="730,383 730,485" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1055,383 1055,485" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="865,505 915,505" fill="none" stroke="#171717" stroke-width="1.9" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<rect x="40" y="45" width="230" height="70" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="155.0" y="87.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Браузер / стример</text>
+<rect x="565" y="45" width="330" height="70" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="730.0" y="87.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >GeoDNS для api</text>
+<rect x="565" y="145" width="330" height="70" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="730.0" y="187.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Региональный L7 для API</text>
+<rect x="595" y="305" width="270" height="78" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="730.0" y="338.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Франкфурт</text>
+<text x="730.0" y="363.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >API + Routing Service</text>
+<rect x="915" y="305" width="280" height="78" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1055.0" y="338.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Ашберн</text>
+<text x="1055.0" y="363.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Резерв API + Routing</text>
+<rect x="595" y="485" width="270" height="76" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="730.0" y="517.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Core PostgreSQL</text>
+<text x="730.0" y="542.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Redis: реестр</text>
+<rect x="915" y="485" width="280" height="76" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1055.0" y="517.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Core PostgreSQL DR</text>
+<text x="1055.0" y="542.5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Redis: реестр</text>
+<rect x="40" y="310" width="230" height="70" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="155.0" y="352.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Региональный чат</text>
+<rect x="40" y="490" width="230" height="70" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="155.0" y="532.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Региональный ingest</text>
+</svg>

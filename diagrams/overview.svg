@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="900" viewBox="0 0 1420 900">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#171717"/></marker></defs>
+<rect width="1420" height="900" fill="white"/>
+<rect x="310" y="150" width="670" height="255" rx="12" fill="#f6f6f6" stroke="#aaa"/>
+<text x="329" y="179" font-family="Arial, sans-serif" font-size="19" text-anchor="start" fill="#171717" font-weight="bold">Региональные точки входа</text>
+<rect x="1020" y="150" width="365" height="710" rx="12" fill="#f6f6f6" stroke="#aaa"/>
+<text x="1039" y="179" font-family="Arial, sans-serif" font-size="19" text-anchor="start" fill="#171717" font-weight="bold">Активный управляющий ДЦ</text>
+<rect x="310" y="447" width="670" height="414" rx="12" fill="#f6f6f6" stroke="#aaa"/>
+<text x="329" y="476" font-family="Arial, sans-serif" font-size="19" text-anchor="start" fill="#171717" font-weight="bold">Региональные сервисы</text>
+<polyline points="260,57 324,57" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="324,87 260,87" fill="none" stroke="#171717" stroke-width="1.9" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<polyline points="260,91 290,91 290,240 340,240" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="260,102 278,102 278,356 340,356" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="215" y="356" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">RTMPS</text>
+<polyline points="171,43 171,23 814,23 814,43" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="814,111 970,111 970,350 943,350" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="857" y="312" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">Промах CDN</text>
+<polyline points="585,244 612,244 612,292 1004,292 1004,244 1042,244" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1202,273 1202,326" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1340,273 1371,273 1371,474 1362,474" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="260,70 301,70 301,129 699,129 699,211" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="626" y="119" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">WSS</text>
+<polyline points="791,273 791,282 624,282 624,536 640,536" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="943,547 1042,547" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1042,568 943,568" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1202,582 1202,640" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1362,671 1373,671 1373,357 1362,357" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="453,383 453,508" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="453,570 453,621" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="340,546 326,546 326,777 340,777" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="910,383 957,383 957,652 943,652" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<text x="906" y="599" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#171717" paint-order="stroke" stroke="white" stroke-width="5" stroke-linejoin="round">origin_region</text>
+<polyline points="640,648 585,648" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="690,683 690,708 510,708 510,747" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="640,780 585,780" fill="none" stroke="#171717" stroke-width="1.9"  marker-end="url(#arrow)"/>
+<polyline points="1042,357 1002,357 1002,783 1042,783" fill="none" stroke="#171717" stroke-width="1.9" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<polyline points="1362,551 1380,551 1380,804 1362,804" fill="none" stroke="#171717" stroke-width="1.9" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<rect x="40" y="43" width="220" height="68" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="150.0" y="84.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Браузер / OBS</text>
+<rect x="324" y="43" width="230" height="68" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="439.0" y="84.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Внешний GeoDNS</text>
+<rect x="675" y="43" width="275" height="68" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="812.5" y="84.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Внешняя CDN</text>
+<rect x="340" y="211" width="245" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="462.5" y="249.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >API ingress</text>
+<rect x="640" y="211" width="303" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="791.5" y="249.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >WebSocket ingress</text>
+<rect x="340" y="321" width="245" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="462.5" y="359.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >RTMPS ingress</text>
+<rect x="640" y="321" width="303" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="791.5" y="359.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Shield региона зрителя</text>
+<rect x="340" y="508" width="245" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="462.5" y="546.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >FFmpeg / packager</text>
+<rect x="640" y="508" width="303" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="791.5" y="546.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Chat gateway / fan-out</text>
+<rect x="640" y="621" width="303" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="791.5" y="659.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Media origin</text>
+<rect x="340" y="621" width="245" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="462.5" y="659.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Live-буфер × 2</text>
+<rect x="340" y="747" width="245" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="462.5" y="785.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Ceph RGW / EC</text>
+<rect x="640" y="747" width="303" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="791.5" y="785.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Клипы / TTL workers</text>
+<rect x="1042" y="211" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="249.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >API / Routing Service</text>
+<rect x="1042" y="326" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="364.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >PgBouncer / PostgreSQL</text>
+<rect x="1042" y="442" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="480.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Redis / реестр кластеров</text>
+<rect x="1042" y="520" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="558.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Kafka: журнал чата</text>
+<rect x="1042" y="640" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="678.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Chat SQL writer</text>
+<rect x="1042" y="762" width="320" height="62" rx="6" fill="white" stroke="#171717" stroke-width="1.8"/>
+<text x="1202.0" y="800.0" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#171717" >Ашберн: DR контура</text>
+</svg>
