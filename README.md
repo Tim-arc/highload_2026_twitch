@@ -1003,5 +1003,3 @@ GeoDNS выбирает доступный региональный L7-вход 
 11. <a id="source11"></a>[RFC 8216 — HTTP Live Streaming](https://www.rfc-editor.org/rfc/rfc8216.html) — варианты качества, плейлисты и byte ranges.
 
 12. <a id="source12"></a>[AWS — Regions and Availability Zones](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html) — определение зоны доступности и её отличие от региона.
-
-13. [Методические указания курса](https://github.com/init/highload/blob/main/homework_architecture.md) — состав разделов 9–11.
