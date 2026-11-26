@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="streaming-platform" name="Платформа прямых трансляций">
+    <mxGraphModel grid="0" guides="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1740" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="Архитектура платформы прямых трансляций" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=39;fontColor=#15283d;fontStyle=1;connectable=0;">
+          <mxGeometry x="60" y="26" width="2380" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="intro" value="Точки входа, региональная обработка, управляющие данные и доставка эфира" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontColor=#4b6178;fontStyle=0;connectable=0;">
+          <mxGeometry x="62" y="87" width="2380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="clientBand" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#f7f9fc;strokeColor=#b1bbc8;connectable=0;movable=0;">
+          <mxGeometry x="60" y="135" width="2380" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="clientBandTitle" value="Клиенты и внешние точки входа" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=21;fontColor=#3c4c60;fontStyle=1;connectable=0;">
+          <mxGeometry x="84" y="147" width="2332" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="apiBand" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#f7faff;strokeColor=#9cbce5;connectable=0;movable=0;">
+          <mxGeometry x="60" y="345" width="2380" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="apiBandTitle" value="01  HTTP API и управляющий контур" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=21;fontColor=#173753;fontStyle=1;connectable=0;">
+          <mxGeometry x="84" y="357" width="2332" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="modulesPanel" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#ffffff;strokeColor=#ccdbee;connectable=0;movable=0;">
+          <mxGeometry x="805" y="402" width="459" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="modulesCaption" value="Функции регионального API" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#395774;fontStyle=1;connectable=0;">
+          <mxGeometry x="827" y="410" width="417" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="masterPanel" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#ffffff;strokeColor=#ccdbee;connectable=0;movable=0;">
+          <mxGeometry x="1495" y="397" width="923" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="masterCaption" value="Франкфурт · основной управляющий контур" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=17;fontColor=#395774;fontStyle=1;connectable=0;">
+          <mxGeometry x="1519" y="401" width="870" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="chatBand" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#f6fbf9;strokeColor=#9acaba;connectable=0;movable=0;">
+          <mxGeometry x="60" y="780" width="2380" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="chatBandTitle" value="02  Чат в реальном времени" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=21;fontColor=#164437;fontStyle=1;connectable=0;">
+          <mxGeometry x="84" y="792" width="2332" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mediaBand" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;fillColor=#faf9ff;strokeColor=#b4abe5;connectable=0;movable=0;">
+          <mxGeometry x="60" y="1135" width="2380" height="455" as="geometry" />
+        </mxCell>
+        <mxCell id="mediaBandTitle" value="03  Публикация и просмотр эфира" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=21;fontColor=#36295f;fontStyle=1;connectable=0;">
+          <mxGeometry x="84" y="1147" width="2332" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="viewerRegion" value="Регион зрителя" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=17;fontColor=#52447b;fontStyle=1;connectable=0;">
+          <mxGeometry x="115" y="1339" width="550" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="originRegion" value="Регион источника" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#52447b;fontStyle=1;connectable=0;">
+          <mxGeometry x="754" y="1369" width="155" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="coloLabel" value="Колокация · FFmpeg и packager на одном media-worker" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#52447b;fontStyle=1;connectable=0;">
+          <mxGeometry x="1440" y="1180" width="666" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="coloPanel" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#d2c9ed;connectable=0;movable=0;">
+          <mxGeometry x="1417" y="1207" width="666" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="viewer" value="&lt;b&gt;Зритель&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;гость или вошедший пользователь&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="94" y="181" width="283" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="streamer" value="&lt;b&gt;Стример&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;панель управления эфиром&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="94" y="251" width="283" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="&lt;b&gt;Браузер&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;веб-приложение и HLS-плеер&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="460" y="211" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" value="&lt;b&gt;GeoDNS&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;IP NGINX выбранного ДЦ&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#3c4c60;fillColor=#f1f3f6;strokeColor=#b1bbc8;strokeWidth=1.5;">
+          <mxGeometry x="1035" y="179" width="297" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn" value="&lt;b&gt;Внешняя CDN&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;www: веб-приложение · video: HLS&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="1620" y="179" width="347" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="obs" value="&lt;b&gt;OBS&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;сервер и ключ задаёт стример&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="2140" y="219" width="275" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="nginx" value="&lt;b&gt;Региональный NGINX&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;TLS и rate limit · по 2 в ДЦ&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="107" y="493" width="286" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="regionalApi" value="&lt;b&gt;Приложение API&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;обрабатывает запрос в регионе&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="470" y="493" width="269" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="&lt;b&gt;Авторизация&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;регистрация, вход, сессии&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="850" y="445" width="370" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog" value="&lt;b&gt;Каталог и поиск&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;карточки, каналы, категории&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="850" y="510" width="370" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="follows" value="&lt;b&gt;Подписки&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;добавление и удаление подписки&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="850" y="575" width="370" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="streams" value="&lt;b&gt;Эфиры, VOD и клипы&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;метаданные, панель, запрос клипа&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="850" y="640" width="370" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="apiCache" value="&lt;b&gt;Redis региона&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;кеш карточек&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1288" y="485" width="187" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="controlApi" value="&lt;b&gt;Управляющий API&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;операции с мастер-данными&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="1530" y="516" width="275" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="routing" value="&lt;b&gt;Routing Service&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;основной и резервные домены&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="1530" y="442" width="285" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="registry" value="&lt;b&gt;Redis · реестр узлов&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;доступность и ёмкость регионов&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1880" y="442" width="257" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="pgCore" value="&lt;b&gt;PgBouncer&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;пул Core DB&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#3c4c60;fillColor=#f1f3f6;strokeColor=#b1bbc8;strokeWidth=1.5;">
+          <mxGeometry x="1880" y="516" width="257" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="core" value="&lt;b&gt;Core PostgreSQL&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;мастер-данные&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="2180" y="516" width="209" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="starts" value="&lt;b&gt;Обработчик стартов&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;читает старты и подписки&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="1880" y="603" width="257" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="dr" value="&lt;b&gt;Ашберн · резерв&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;управляющий API, Routing Service, реплики SQL и Kafka&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#3c4c60;fillColor=#f1f3f6;strokeColor=#b1bbc8;strokeWidth=1.5;">
+          <mxGeometry x="1530" y="681" width="859" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ws" value="&lt;b&gt;WebSocket ingress&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;chat-домен выбранного региона&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#164437;fillColor=#ecf7f4;strokeColor=#9acaba;strokeWidth=1.5;">
+          <mxGeometry x="107" y="905" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" value="&lt;b&gt;Chat gateway&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;WSS, проверка прав, ACK Kafka&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#164437;fillColor=#ecf7f4;strokeColor=#9acaba;strokeWidth=1.5;">
+          <mxGeometry x="458" y="905" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka" value="&lt;b&gt;Kafka · Франкфурт&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;chat.messages · ключ channel_id&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#164437;fillColor=#ecf7f4;strokeColor=#9acaba;strokeWidth=1.5;">
+          <mxGeometry x="838" y="905" width="284" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fan" value="&lt;b&gt;Региональный fan-out&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;по одной consumer group на регион&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#164437;fillColor=#ecf7f4;strokeColor=#9acaba;strokeWidth=1.5;">
+          <mxGeometry x="1230" y="905" width="308" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="writer" value="&lt;b&gt;Chat writer&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;пакетная запись истории&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#164437;fillColor=#ecf7f4;strokeColor=#9acaba;strokeWidth=1.5;">
+          <mxGeometry x="1650" y="905" width="225" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pgChat" value="&lt;b&gt;PgBouncer&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;пул истории&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#3c4c60;fillColor=#f1f3f6;strokeColor=#b1bbc8;strokeWidth=1.5;">
+          <mxGeometry x="1950" y="905" width="179" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="chatDb" value="&lt;b&gt;Chat Master DB&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;PostgreSQL · Франкфурт&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="2170" y="905" width="228" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tail" value="&lt;b&gt;Региональный Redis&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;хвост из 100 сообщений на канал&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1230" y="1026" width="308" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="ingest" value="&lt;b&gt;RTMPS ingest&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;ключ и выбор media-worker&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="2140" y="1231" width="275" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="encoder" value="&lt;b&gt;FFmpeg&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;три варианта качества&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="1764" y="1231" width="293" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="packager" value="&lt;b&gt;HLS packager&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;сегменты 2 с и плейлисты&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="1440" y="1231" width="268" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="buffer" value="&lt;b&gt;Live-буфер NVMe&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;две локальные копии · 10 минут&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1090" y="1231" width="278" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="shield" value="&lt;b&gt;Media shield&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;кеш и объединение промахов&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="340" y="1408" width="303" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="origin" value="&lt;b&gt;Media origin&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;live по origin_region · VOD из RGW&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="762" y="1408" width="279" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="objects" value="&lt;b&gt;Ceph RGW / OSD&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;VOD, клипы, изображения · EC 8+3&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1090" y="1408" width="278" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="clips" value="&lt;b&gt;Worker клипов&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;создаёт самостоятельный файл&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="1493" y="1408" width="290" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ttl" value="&lt;b&gt;Worker хранения&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;очистка VOD по TTL&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#36295f;fillColor=#f1effe;strokeColor=#b4abe5;strokeWidth=1.5;">
+          <mxGeometry x="1493" y="1503" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="objectCopy" value="&lt;b&gt;Ceph в парном регионе&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;реплика медиаданных&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#67471e;fillColor=#fff6e9;strokeColor=#dec296;strokeWidth=1.5;">
+          <mxGeometry x="1090" y="1503" width="278" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" value="&lt;b&gt;Prometheus / Grafana&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;сбор метрик и алерты по всем ДЦ&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#3c4c60;fillColor=#f1f3f6;strokeColor=#b1bbc8;strokeWidth=1.5;">
+          <mxGeometry x="1960" y="1650" width="399" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="Цвет обозначает контур. Пунктир с подписью показывает ручную настройку, условный доступ, репликацию или запуск фоновой задачи." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#4b6178;fontStyle=0;connectable=0;">
+          <mxGeometry x="60" y="1663" width="1760" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="viewerUI" edge="1" parent="1" source="viewer" target="browser" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.25;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="419" y="208" />
+              <mxPoint x="419" y="228.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="streamerUI" edge="1" parent="1" source="streamer" target="browser" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="419" y="278" />
+              <mxPoint x="419" y="263.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="resolve" edge="1" parent="1" source="browser" target="dns" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.2;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="918" y="225" />
+              <mxPoint x="918" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="resolveLabel" value="DNS · api.twitch-clone.com" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#3266a1;fontStyle=0;connectable=0;">
+          <mxGeometry x="761" y="190" width="260" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="loadCdn" edge="1" parent="1" source="browser" target="cdn" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.47;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1452" y="243.9" />
+              <mxPoint x="1452" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loadCdnLabel" value="HTTPS · интерфейс и HLS" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="1030" y="243" width="400" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="configureObs" edge="1" parent="1" source="browser" target="obs" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.78;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;dashed=1;dashPattern=6 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1968" y="265.6" />
+              <mxPoint x="1968" y="253.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsLabel" value="Стример переносит ingest-домен и ключ из панели в OBS" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="1240" y="276" width="733" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="http" edge="1" parent="1" source="browser" target="nginx" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=0.44;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585.4" y="449" />
+              <mxPoint x="250" y="449" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="httpLabel" value="HTTPS · запрос и ответ, включая домены подключения" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#3266a1;fontStyle=0;connectable=0;">
+          <mxGeometry x="610" y="304" width="625" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="proxy" edge="1" parent="1" source="nginx" target="regionalApi" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dispatchauth" edge="1" parent="1" source="regionalApi" target="auth" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="777" y="528" />
+              <mxPoint x="777" y="469" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dispatchcatalog" edge="1" parent="1" source="regionalApi" target="catalog" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="777" y="528" />
+              <mxPoint x="777" y="534" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dispatchfollows" edge="1" parent="1" source="regionalApi" target="follows" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="777" y="528" />
+              <mxPoint x="777" y="599" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dispatchstreams" edge="1" parent="1" source="regionalApi" target="streams" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="777" y="528" />
+              <mxPoint x="777" y="664" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cardsCache" edge="1" parent="1" source="catalog" target="apiCache" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1250" y="534" />
+              <mxPoint x="1250" y="534.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="remote" edge="1" parent="1" source="regionalApi" target="controlApi" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=0.5;exitY=1;entryX=0;entryY=0.66;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="604.5" y="718" />
+              <mxPoint x="1479" y="718" />
+              <mxPoint x="1479" y="555.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="remoteLabel" value="При необходимости · операции с мастер-данными или запрос доменов" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#3266a1;fontStyle=0;connectable=0;">
+          <mxGeometry x="620" y="692" width="640" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="getDomain" edge="1" parent="1" source="controlApi" target="routing" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=0.52;exitY=0;entryX=0.501754;entryY=1;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="routingState" edge="1" parent="1" source="routing" target="registry" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="masterData" edge="1" parent="1" source="controlApi" target="pgCore" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="coreSql" edge="1" parent="1" source="pgCore" target="core" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="scanStarts" edge="1" parent="1" source="starts" target="pgCore" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asyncCore" edge="1" parent="1" source="core" target="dr" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#7a8797;exitX=0.5;exitY=1;entryX=0.87836;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;dashPattern=6 5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="drLabel" value="WAL / переключение контура · §9.3" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#7a8797;fontStyle=0;connectable=0;">
+          <mxGeometry x="2100" y="615" width="280" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="openWss" edge="1" parent="1" source="browser" target="ws" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=0.09;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="485.65" y="315" />
+              <mxPoint x="36" y="315" />
+              <mxPoint x="36" y="872" />
+              <mxPoint x="242" y="872" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wssLabel" value="WSS к выданному chat-домену" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#247764;fontStyle=0;connectable=0;">
+          <mxGeometry x="93" y="847" width="311" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="wssProxy" edge="1" parent="1" source="ws" target="chat" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="publish" edge="1" parent="1" source="chat" target="kafka" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="publishLabel" value="Публикация" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#247764;fontStyle=0;connectable=0;">
+          <mxGeometry x="737" y="879" width="105" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="consume" edge="1" parent="1" source="kafka" target="fan" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="consumeLabel" value="Чтение событий" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#247764;fontStyle=0;connectable=0;">
+          <mxGeometry x="1118" y="879" width="116" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="fanBack" edge="1" parent="1" source="fan" target="chat" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=0.5;exitY=0;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1384" y="849" />
+              <mxPoint x="600.5" y="849" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fanBackLabel" value="Fan-out по подписанным gateway" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#247764;fontStyle=0;connectable=0;">
+          <mxGeometry x="784" y="817" width="409" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="consumeHistory" edge="1" parent="1" source="kafka" target="writer" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=0.5;exitY=1;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="1007" />
+              <mxPoint x="1762.5" y="1007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="historyLabel" value="Отдельная consumer group истории" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#247764;fontStyle=0;connectable=0;">
+          <mxGeometry x="993" y="980" width="293" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="saveChat" edge="1" parent="1" source="writer" target="pgChat" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chatSql" edge="1" parent="1" source="pgChat" target="chatDb" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tailUpdate" edge="1" parent="1" source="fan" target="tail" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#247764;exitX=0.2;exitY=1;entryX=0.2;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tailRead" edge="1" parent="1" source="chat" target="tail" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=0.5;exitY=1;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600.5" y="1057" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tailReadLabel" value="Догрузка хвоста при подключении" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#94621d;fontStyle=0;connectable=0;">
+          <mxGeometry x="675" y="1061" width="460" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="historyMiss" edge="1" parent="1" source="chat" target="pgChat" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=0.78;exitY=1;entryX=0.58;entryY=1;exitPerimeter=0;entryPerimeter=0;dashed=1;dashPattern=6 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680.3" y="1032" />
+              <mxPoint x="1128" y="1032" />
+              <mxPoint x="1128" y="1097" />
+              <mxPoint x="2053.82" y="1097" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="missLabel" value="При промахе кеша · чтение истории через PgBouncer" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#94621d;fontStyle=0;connectable=0;">
+          <mxGeometry x="1510" y="1057" width="615" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="notifications" value="&lt;b&gt;Уведомления&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#45576b&quot;&gt;о старте эфира для онлайн-подписчиков&lt;/span&gt;" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=12;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=5;fontSize=20;fontColor=#173753;fillColor=#eaf3ff;strokeColor=#9cbce5;strokeWidth=1.5;">
+          <mxGeometry x="1530" y="603" width="308" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyOnline" edge="1" parent="1" source="starts" target="notifications" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#3266a1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sendRtmp" edge="1" parent="1" source="obs" target="ingest" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0.5;exitY=1;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2277.5" y="309" />
+              <mxPoint x="2455" y="309" />
+              <mxPoint x="2455" y="1266" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rtmpLabel" value="RTMPS · исходный поток" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="2134" y="1186" width="280" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pushToEncoder" edge="1" parent="1" source="ingest" target="encoder" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="toPackager" edge="1" parent="1" source="encoder" target="packager" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="segments" edge="1" parent="1" source="packager" target="buffer" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vodWrite" edge="1" parent="1" source="packager" target="objects" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0.5;exitY=1;entryX=0.7;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1574" y="1355" />
+              <mxPoint x="1284.6" y="1355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="clipJob" edge="1" parent="1" source="streams" target="clips" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;dashPattern=6 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1278" y="664" />
+              <mxPoint x="1278" y="738" />
+              <mxPoint x="2427" y="738" />
+              <mxPoint x="2427" y="1385" />
+              <mxPoint x="1638" y="1385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="clipJobLabel" value="Задание на создание клипа" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="1830" y="1359" width="335" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="vodLabel" value="VOD · минутные объекты" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="1318" y="1366" width="333" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="cdnMiss" edge="1" parent="1" source="cdn" target="shield" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2476" y="210" />
+              <mxPoint x="2476" y="1623" />
+              <mxPoint x="231" y="1623" />
+              <mxPoint x="231" y="1444" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cdnMissLabel" value="Промах CDN" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=15;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="97" y="1446" width="117" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="shieldMiss" edge="1" parent="1" source="shield" target="origin" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="privateLink" value="При промахе" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="648" y="1409" width="108" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="liveRead" edge="1" parent="1" source="origin" target="buffer" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0.5;exitY=0;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="901.5" y="1266" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="liveLabel" value="Live · по origin_region" vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="921" y="1281" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="vodRead" edge="1" parent="1" source="origin" target="objects" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="clipFile" edge="1" parent="1" source="clips" target="objects" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#6950ab;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="expire" edge="1" parent="1" source="ttl" target="objects" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#94621d;exitX=0;exitY=0.5;entryX=0.92;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1441" y="1533" />
+              <mxPoint x="1441" y="1491" />
+              <mxPoint x="1345.76" y="1491" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="objectReplication" edge="1" parent="1" source="objects" target="objectCopy" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2.1;endArrow=block;endFill=1;jumpStyle=arc;jumpSize=7;strokeColor=#7a8797;exitX=0.4;exitY=1;entryX=0.4;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;dashPattern=6 5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mediaNotes" value="HLS-сегменты возвращаются по маршруту запроса. origin_region сохраняется при начале эфира; медиатрафик идёт напрямую." vertex="1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#6950ab;fontStyle=0;connectable=0;">
+          <mxGeometry x="93" y="1552" width="966" height="23" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

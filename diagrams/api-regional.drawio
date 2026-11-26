@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="regional-api" name="Точки входа и управляющий контур">
+    <mxGraphModel grid="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1090" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Точки входа и управляющий контур" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=30;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="22" width="1420" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="HTTP API отвечает в регионе клиента. Управляющие операции обращаются к активному контуру." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="72" width="1420" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="region" value="Выбранный регион API · пример: Сингапур" style="rounded=1;arcSize=5;html=1;verticalAlign=top;align=left;spacingTop=12;spacingLeft=16;fontSize=17;fontStyle=1;fillColor=#eef6ff;strokeColor=#8aadd3;fontColor=#172536;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="251" width="610" height="315" as="geometry" />
+        </mxCell>
+        <mxCell id="main" value="Франкфурт · основной управляющий контур" style="rounded=1;arcSize=5;html=1;verticalAlign=top;align=left;spacingTop=12;spacingLeft=16;fontSize=17;fontStyle=1;fillColor=#f5f2fc;strokeColor=#b1a1ce;fontColor=#172536;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="688" width="670" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="reserve" value="Ашберн · резервный управляющий контур" style="rounded=1;arcSize=5;html=1;verticalAlign=top;align=left;spacingTop=12;spacingLeft=16;fontSize=17;fontStyle=1;fillColor=#f1f8f5;strokeColor=#93b9a8;fontColor=#172536;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="688" width="690" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="Браузер / веб-приложение" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#e9f2fc;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="540" y="123" width="270" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" value="GeoDNS" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="40" y="123" width="185" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn" value="Внешняя CDN" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="123" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="obs" value="OBS · настроенный сервер и ключ эфира" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="270" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="obsSetup" value="Стример берёт домен в панели управления&lt;br&gt;и указывает его в настройках OBS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="209" width="300" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" value="WebSocket ingress&lt;br&gt;в выбранном регионе чата" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="40" y="374" width="255" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="ingest" value="Региональный сервер&lt;br&gt;приёма эфира" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="438" width="300" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="nginx" value="Региональный NGINX&lt;br&gt;по 2 экземпляра в каждом ДЦ" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="540" y="306" width="270" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="Региональное приложение API" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#dceafe;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="540" y="420" width="270" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" value="Redis&lt;br&gt;локальный кеш" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="825" y="417" width="155" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="frControl" value="Управляющий API" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="250" y="747" width="250" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="frRouting" value="Routing Service" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="75" y="838" width="240" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="frDb" value="Core PostgreSQL&lt;br&gt;primary" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="445" y="842" width="228" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="frRegistry" value="Redis&lt;br&gt;реестр узлов и загрузки" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="75" y="926" width="240" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="frChatDb" value="Chat Master PostgreSQL&lt;br&gt;история чата · §10.2" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="445" y="926" width="228" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="usControl" value="Резервный управляющий API" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="980" y="747" width="270" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="usRouting" value="Резервный Routing Service" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="798" y="838" width="245" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="usDb" value="Core PostgreSQL&lt;br&gt;DR-реплика" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="1193" y="842" width="228" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="usRegistry" value="Redis&lt;br&gt;реестр узлов и загрузки" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="798" y="926" width="245" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="usChatDb" value="Chat Master PostgreSQL&lt;br&gt;DR-реплика" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=12;whiteSpace=wrap;html=1;fontSize=16;spacing=10;fillColor=#ffffff;strokeColor=#526477;strokeWidth=1.5;fontColor=#172536;" vertex="1" parent="1">
+          <mxGeometry x="1193" y="926" width="228" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="dnsLookup" edge="1" parent="1" source="browser" target="dns" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnsText" value="DNS для api.twitch-clone.com&lt;br&gt;IP регионального NGINX" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="112" width="295" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cdnHttp" edge="1" parent="1" source="browser" target="cdn" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cdnText" value="HTTPS · интерфейс и HLS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="825" y="120" width="275" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="clientHttp" edge="1" parent="1" source="browser" target="nginx" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#245fa0;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="clientHttpText" value="HTTPS · ответ API, включая домены подключения" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="682" y="208" width="405" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="websocket" edge="1" parent="1" source="browser" target="chat" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#245fa0;endArrow=block;endFill=1;exitX=0.15;exitY=1;entryX=0.52;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="581" y="220" />
+              <mxPoint x="173" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chatText" value="WSS к выданному chat-домену" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="55" y="257" width="235" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rtmp" edge="1" parent="1" source="obs" target="ingest" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rtmpText" value="Отправка&lt;br&gt;потока по RTMPS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=13;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="355" width="152" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="apiHttp" edge="1" parent="1" source="nginx" target="api" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#245fa0;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="readCache" edge="1" parent="1" source="api" target="cache" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cacheText" value="Чтение при локальной обработке" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=13;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="510" width="336" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="regionalMaster" edge="1" parent="1" source="api" target="frControl" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.24;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="605" y="605" />
+              <mxPoint x="375" y="605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="regionalMasterText" value="Операции с мастер-данными&lt;br&gt;Запрос домена → основной и резервные домены" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="403" y="613" width="392" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="regionalDr" edge="1" parent="1" source="api" target="usControl" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.77;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;dashed=1;dashPattern=7 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="748" y="611" />
+              <mxPoint x="1115" y="611" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="regionalDrText" value="Те же операции после переключения" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="815" y="579" width="337" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="frRoute" edge="1" parent="1" source="frControl" target="frRouting" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.17;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="292" y="820" />
+              <mxPoint x="195" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frCore" edge="1" parent="1" source="frControl" target="frDb" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.83;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="457" y="820" />
+              <mxPoint x="559" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frRead" edge="1" parent="1" source="frRouting" target="frRegistry" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="usRoute" edge="1" parent="1" source="usControl" target="usRouting" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.17;exitY=1;entryX=0.5;entryY=0;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1026" y="820" />
+              <mxPoint x="920" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usCore" edge="1" parent="1" source="usControl" target="usDb" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.83;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1204" y="820" />
+              <mxPoint x="1307" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="usRead" edge="1" parent="1" source="usRouting" target="usRegistry" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="coreReplication" edge="1" parent="1" source="frDb" target="usDb" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=1;exitY=0.64;entryX=0;entryY=0.64;dashed=1;dashPattern=7 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="738" y="884" />
+              <mxPoint x="738" y="906" />
+              <mxPoint x="1164" y="906" />
+              <mxPoint x="1164" y="884" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chatReplication" edge="1" parent="1" source="frChatDb" target="usChatDb" style="edgeStyle=segmentEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#43576b;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=1;dashed=1;dashPattern=7 5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="1032" />
+              <mxPoint x="1307" y="1032" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="replicationText" value="Асинхронная репликация PostgreSQL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontColor=#35485b;fontSize=13;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1040" width="500" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
